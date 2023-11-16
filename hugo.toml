@@ -61,3 +61,7 @@ weight = 30
 name = "Software"
 url = "/software"
 weight = 30
+
+
+[taxonomies]
+tag = 'tags'

@@ -1,13 +1,8 @@
-baseurl = "/"
+baseurl = "https://mouhous.luimu.dev"
 title = "Mouhous"
 languageCode = "en-us"
-paginate = 10          # Number of elements per page in pagination
+paginate = 10                         # Number of elements per page in pagination
 theme = "binario"
-
-[Author] # Used in authorbox
-name = "Luimu"
-bio = "Your average nerd"
-avatar = "/pfp.png"
 
 [Params]
 author = "Luimu"

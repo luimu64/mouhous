@@ -13,7 +13,7 @@ The absolute cheapest way would've been to order the boards directly from JLPCB 
 Getting the boards directly from pcb manufacturer also meant that I would've had to go fully caseless or get 3d printed case for extra cost. I then stumbled on splitkb.com who sold kits in eu and had excellent documentation, support and reputation.
 I was able to get full kit with nice premium looking and feeling case for only 200€ which was pretty good (the absolute cheapest set I could gather for the aurora sweep in there was around 140€).
 
-## Chapter 1: The shopping
+## Shopping
 
 I had decided on where to buy and what to buy. I went trough the nice kit composer which added every part needed easily to my cart (except keycaps). I was super excited so I only glanced over the cart for having everything and just pressed buy.
 I got asked what shipping option I wanted: all of them said 3-5 days so I picked the cheapest DHL option, it can't be that bad right? (it was that bad).
@@ -21,7 +21,7 @@ Two days go by and I realized that I didn't order any homing keys (the keys with
 I then contacted the support and asked if they could've added one pair of homing keys and switch the color of my ordered caps to white. They answered in a day and said that they could add the homing keys but the keycaps would arrive later that week and asked whether I wanted to put the order on hold until they arrived or send the order immediately.
 I really wanted those white caps so I answered that they should wait one week for the caps, and if they didn't arrive by then, to just send the order as is. They did exactly that and shipped it next monday with white caps.
 
-## Chapter 2: The shipping
+## Shipping
 
 I got the tracking code into my email and started following it, checking every hour or so for updates. First it left the store (located in netherlands) and got moved to DHL's sorting center in germany.
 This was all good and dandy but everything went wrong the next day when it was reported to have been arrived in the destination country, but that destination country was UK for some reason.
@@ -32,7 +32,7 @@ So I did the only thing I could do at that point, waited. I waited for around tw
 ![Nice 20 day jump](/ramblings/keyboard_ordeal/history.png)\
 _20 days of nothing, was probably sitting in UK customs waiting for someone to pay_
 
-## Chapter 3: The customs
+## Customs
 
 The reason I went to great lenghts in finding the store in eu was to avoid dealing with customs so I was highly amused when I got message telling that I should pay the duty/vat to receive my package which arrived from outside eu.
 I then called the customs to explain the situation and the response I got was that it would be the responsibility of the postal service to release it from the customs. I checked the postal service's website, tried to call them, failed because the number is paid and my number could no call to those, and started a chat with some agent using their website.
@@ -43,7 +43,7 @@ This so called 3-5 day shipping was from 7th of November to 1st of December, who
 ![Illegal to release](/ramblings/keyboard_ordeal/customs.png)\
 _Message from postal service agent telling me how only the customs can release packages stuck in customs_
 
-## Chapter 4: The assembly
+## Assembly
 
 Assembling the kit was very straight forward. All the instructions were super clear and soldering wasn't as hard as it first had seemed to be. Took me 5-6 hours to fully assemble everything.
 Only mistake I made was breaking off one header leg from one of the controllers which I was able to fix by replacing it with diode leg.
@@ -54,8 +54,9 @@ _All the parts came in nice zip bags_
 ![Broken off leg](/ramblings/keyboard_ordeal/leg.jpg)\
 _One of the header legs broke off when I pulled the controller of the sockets too hard_
 
-## Chapter 5: The software
+## Software
 
+Once I had built the keyboard it was time for installing and customizing the firmware. I use Fedora Silverblue as my operating system of choice so I thought setting up the QMK environment would be easy. I painstakingly installed all the dependencies which were no listed anywhere (later found install script with all the necessary package names from the qmk repo), but I just couldn't get it to compile any firmware for my microcontroller. I also tried the docker approach but that failed with different errors. I happen to be bit of a gamer so I also have windows installed and was able to set up the environment there succesfully.
 I then used the next 8 hours trying to get some kind of layout together and reading the QMK documentation on how stuff worked and barely got alpha layer working in that time (alphas are the basic letters). It took another day for there to be enough layout to fully start using it.
 I have since edited the layout daily bit by bit small changes when I need or think of something. Here's repo containing the layout in it's current state [repo](https://github.com/luimu64/qmk_layouts/tree/master/sweep).
 
